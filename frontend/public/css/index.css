@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #aacdef;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Formulario */
+.form-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    width: 280px;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+}
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#cancelEdit {
+    background-color: #6c757d;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Lista de eventos */
+.event-list {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.event-list h2 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    border: 1px solid #000000;
+}
+
+th, td {
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #96b8f7;
+    font-weight: bold;
+}
+
+/* Botones de acción */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.actions button {
+    font-size: 0.85em;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.actions .edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions .buy-btn {
+    background-color: #ffc107;
+    color: #212529;
+}

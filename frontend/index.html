@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Eventos</title>
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de Formulario -->
+        <section class="form-section">
+            <h2 id="form-title">Agregar Evento</h2>
+            <form id="eventForm">
+                <input type="hidden" id="eventId">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_hora">Fecha y Hora</label>
+                    <input type="datetime-local" id="fecha_hora" required>
+                </div>
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" id="ubicacion">
+                </div>
+                <div class="form-group">
+                    <label for="boletos_disponibles">Boletos</label>
+                    <input type="number" id="boletos_disponibles" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio_boleto">Precio</label>
+                    <input type="number" id="precio_boleto">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Guardar</button>
+                    <button type="button" id="cancelEdit" class="hidden">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección de Tabla de Eventos -->
+        <section class="event-list">
+            <h2>Eventos Disponibles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Ubicación</th>
+                        <th>Boletos</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="eventList">
+                
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="public/js/index.js"></script>
+</body>
+</html>
